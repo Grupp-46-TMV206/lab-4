@@ -74,7 +74,7 @@ gauss_solve(total_matrix, "np.random.randint")
 def inverse_solve(A, y, matrix_method):
 
     start_time = time.time()
-    # Multiply right side of equation Ax = y
+    # Multiply both sides of equation Ax = y
     # by the inverse of A to get x
     x = np.matmul(LA.inv(A), y)
     end_time = time.time()
