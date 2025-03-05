@@ -60,7 +60,7 @@ gauss_solve(total_matrix, "np.random.rand")
 # Test with np.random.randint
 total_matrix = Matrix([[np.random.randint(0, 1_000_000_000) for _ in range(101)] for _ in range(100)])
 gauss_solve(total_matrix, "np.random.randint")
-# It appears the size of the randint makes the solution take longer
+# It appears the range of the randint affects the time to solve the equation
 
 
 
